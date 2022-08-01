@@ -28,8 +28,7 @@ const io = new Server(httpServer, {
   }
 })
 // get the socket io to listen for connections/send data
-httpServer.listen(port);
-app.listen(port, () => console.log(`Listening on port ${port}!`))
+httpServer.listen(port,() => console.log(`Listening on port ${port}!`));
 
 generateInitialTickerPrice()
 const job = new CronJob(
