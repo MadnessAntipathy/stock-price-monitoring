@@ -1,0 +1,15 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "frontend": "npm --prefix ./frontend run installDep && npm --prefix ./frontend run start",
+    "backend": "npm --prefix ./backend run installDep && npm --prefix ./backend run start",
+    "start": "npm run frontend & npm run backend"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {}
+}
